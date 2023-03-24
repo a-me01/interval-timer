@@ -1,6 +1,6 @@
 # interval-timer
  ***This is a file that will explain the JS line by line in plain English.***
-## lines 1-6
+## Clearing the li list
 ```
 const clearButton = document.getElementById("clear-button");
 ```
