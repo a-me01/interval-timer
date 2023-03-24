@@ -52,10 +52,15 @@ const ul = document.getElementById("list");
 - Retrieves the unordered list element from the document, which has the ID "list", using the getElementById() method and assigns it to a constant variable named ul.
 ```
 ul.appendChild(li);
-}
+
 ```
 - Adds the newly created li element to the end of the unordered list. This effectively adds a new list item to the existing list.
-
+```
+document.getElementById("name").value = "";
+document.getElementById("seconds").value = "";
+}
+```
+- Clears the input fields. 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## startTimer()  
