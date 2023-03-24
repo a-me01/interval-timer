@@ -15,6 +15,8 @@ function generateList(event) {
     li.innerHTML = `${name} ${seconds}s`;
     const ul = document.getElementById("list");
     ul.appendChild(li);
+    document.getElementById("name").value = "";
+    document.getElementById("seconds").value = "";
 }
 
 // interval timer function
