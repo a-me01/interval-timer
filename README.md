@@ -1,6 +1,6 @@
 # interval-timer
  ***This is a file that will explain the JS line by line in plain English.***
-## Clearing the li list
+
 ```
 const clearButton = document.getElementById("clear-button");
 ```
@@ -177,3 +177,24 @@ intervalId = setInterval(countdown, 1000);
 }
 ```
 -The intervalId variable is set to the ID of an interval timer that calls the countdown() function every 1000 milliseconds (i.e., every second).
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Clearing the li list
+```
+clearButton.addEventListener("click", function () {
+```
+- This line adds an event listener to the clearButton element for the "click" event. When the button is clicked, the function that follows will be executed.
+
+```
+ clearInterval(intervalId);
+```
+- This stops the timer by using clearInterval and passing IntervalID.
+```
+ulList.innerHTML = "";
+```
+- This line sets the innerHTML property of the ulList element to an empty string, effectively removing all of its child elements.
+```
+const timerElement = document.getElementById("timer");
+timerElement.innerHTML = "0:00";
+});
+```
+-This resets the timer display.
