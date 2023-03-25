@@ -1,3 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    }
+
+.logo {
+    border: 2px solid black;
+    height: 15px;
+    width: 15px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
+
+
+
 .current {
     background-color: green;
 }
+
