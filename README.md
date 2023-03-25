@@ -10,13 +10,9 @@ const ulList = document.getElementById("list");
 ```
 - This line gets the HTML element with the id of "list" and stores it in the ulList constant.
 ```
-clearButton.addEventListener("click", function () {
+let intervalId;
 ```
-- This line adds an event listener to the clearButton element for the "click" event. When the button is clicked, the function that follows will be executed.
-```
-ulList.innerHTML = "";
-```
-- This line sets the innerHTML property of the ulList element to an empty string, effectively removing all of its child elements.
+-This line of code declares a variable named intervalId and initializes it with the value undefined.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -46,6 +42,15 @@ const li = document.createElement("li");
 li.innerHTML = ${name} ${seconds}s;
 ```
 - This sets the inner HTML of the li element to a string that includes the name and seconds values, with an "s" appended to the end of the seconds value. This creates a formatted string that will be displayed in the list.
+```
+const button = document.createElement("button");
+    button.innerHTML = "Remove";
+    button.addEventListener("click", function () {
+      li.remove();
+    });
+    li.appendChild(button);
+```
+-This creates a button and stores it in the variable 'button', an event listener is added to this button that removes the corresponding 'li' element when it is clicked, the button is then appended (added to the end of) the 'li' element.
 ```
 const ul = document.getElementById("list");
 ```
