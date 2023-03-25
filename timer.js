@@ -10,11 +10,17 @@ function generateList(event) {
     const seconds = document.getElementById("seconds").value;
     const li = document.createElement("li");
     li.innerHTML = `${name} ${seconds}s`;
+    const button = document.createElement("button");
+    button.innerHTML = "Remove";
+    button.addEventListener("click", function () {
+      li.remove();
+    });
+    li.appendChild(button);
     const ul = document.getElementById("list");
     ul.appendChild(li);
     document.getElementById("name").value = "";
     document.getElementById("seconds").value = "";
-}
+  }
 
 // interval timer function
 function startTimer() {
