@@ -181,7 +181,7 @@ countdown();
 intervalId = setInterval(countdown, 1000);
 }
 ```
--The intervalId variable is set to the ID of an interval timer that calls the countdown() function every 1000 milliseconds (i.e., every second).
+- The intervalId variable is set to the ID of an interval timer that calls the countdown() function every 1000 milliseconds (i.e., every second).
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Clearing the li list
 ```
