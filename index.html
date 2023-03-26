@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interval Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="buttonBar">
-            
-            <button id="clear-button"></button>
+            <img src="img/seconds-low-resolution-logo-color-on-transparent-background.png" class="logo">
+            <button id="clear-button" style="color: #422800;"></button>
         </div>
         
         <section class="countdown">
@@ -26,13 +29,15 @@
             <ul id="list"></ul>
         </section>
     
-        <section>
+        <section class="formSection">
             <form>
-                <label for="name">Interval name:</label><br>
+                <label for="name">Interval name:</label>
                 <input type="text" id="name" name="name"><br>
-                <label for="seconds">Time in seconds:</label><br>
-                <input type="number" id="seconds" name="seconds"><br>
-                <button type="submit" onclick="generateList(event)">Add interval</button>
+                <label for="seconds">Time in seconds:</label>
+                <input type="text" id="seconds" name="seconds"><br>
+                <div class="formButton"> 
+                    <button type="submit" onclick="generateList(event)" class="addButton">Add interval</button>
+                </div>
             </form>
         </section>
         

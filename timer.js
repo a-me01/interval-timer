@@ -11,7 +11,7 @@ function generateList(event) {
     const li = document.createElement("li");
     li.innerHTML = `${name} ${seconds}s`;
     const button = document.createElement("button");
-    button.innerHTML = "Remove";
+    button.innerHTML = "";
     button.addEventListener("click", function () {
       li.remove();
     });
