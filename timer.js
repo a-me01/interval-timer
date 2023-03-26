@@ -1,7 +1,5 @@
-
 const clearButton = document.getElementById("clear-button");
 const ulList = document.getElementById("list");
-
 let intervalId;
 // form to generate li into the ul
 function generateList(event) {
@@ -26,7 +24,6 @@ function generateList(event) {
 function startTimer() {
     // storing li's into variable
     const lis = document.querySelectorAll("#list li");
-
     // remove "current" class from all li on execution
     for (let i = 0; i < lis.length; i++) {
         lis[i].classList.remove("current");
@@ -72,9 +69,7 @@ function startTimer() {
         remainingSeconds--;
     }
     countdown();
-
     intervalId = setInterval(countdown, 1000);
-
 
     // clear button to clear the li list and stop the timer
     clearButton.addEventListener("click", function () {
@@ -84,5 +79,4 @@ function startTimer() {
     const timerElement = document.getElementById("timer");
     timerElement.innerHTML = "0:00";
   });
-
 }
